@@ -1,6 +1,8 @@
 from flask import Flask
+from jinja2 import Template
+from flask import render_template, url_for, request, redirect, flash
 
 app= Flask(__name__)
 @app.route('/')
 def index():
-    return "<h1>Welcome to Coding</h1>"
+    return render_template("index.html")
