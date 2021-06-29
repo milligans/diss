@@ -1,5 +1,7 @@
-
-body {
+body{
+    background-color: black;
+}
+#homebox {
      background-color : #efd9d1 
  }
  hr {
