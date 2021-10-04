@@ -1,19 +1,35 @@
 body{
-    background-color: black;
+    background: linear-gradient(#D4E2D4, #ECB390 ) no-repeat center center fixed;
+
 }
-#homebox {
-     background-color : #efd9d1 
- }
- hr {
-     border-color : grey;   
-     border-style: none none dotted none;
-     width: 5px;
-     height: 0%;
- }
+/*#homebox {*/
+/*     background-color : #FCF8E8;*/
+/* }*/
+
 img {
     height: 400px;
 }
 h1,h3{
-    color: #66BFBF;
+    color: #DF7861;
 }
- 
+.tab-content>.active {
+    background: #FCF8E8;
+}
+.nav-tabs .nav-link {
+    background: #ECB390;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background: #FCF8E8;
+}
+/*#topofpage{*/
+/*    background: #FCF8E8*/
+/*}*/
+/*#profile{*/
+/*    background: #D4E2D4;*/
+/*}*/
+/*#contact{*/
+/*    background: #ECB390;*/
+/*}*/
+
+
+/* #FCF8E8 beige, D4E2D4 pale green #ECB390 rose # DF7861 dark rose*/
