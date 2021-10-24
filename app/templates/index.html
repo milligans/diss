@@ -1,13 +1,13 @@
 {% extends "layout.html" %}
-
+{% import "bootstrap/wtf.html" as wtf %}
 {% block content %}
 
-<ul class="nav nav-tabs" id="myTab" role="tablist">
+<ul class="nav nav-tabs mx-auto mt-3" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true"><h2>About</h2></button>
+    <button class="nav-link active me-3" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true"><h2>About</h2></button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills" type="button" role="tab" aria-controls="skills" aria-selected="false"><h2>Skill Set</h2></button>
+    <button class="nav-link me-3" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills" type="button" role="tab" aria-controls="skills" aria-selected="false"><h2>Skill Set</h2></button>
   </li>
   <li class="nav-item" role="presentation">
     <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false"><h2>Contact</h2></button>
@@ -19,14 +19,15 @@
     <div class="row ">
         <div class="col" id="mypic">
 
-                <img src = "{{url_for('static', filename='img/tablet-salt25.jpg')}}" alt="image of Suzanne Milligan" class="img-fluid rounded float-start"   border="3px">
+                <img src = "{{url_for('static', filename='img/smilligan.jpg')}}" alt="image of Suzanne Milligan" class="img-fluid rounded float-start" width="  border="0.5rem">
         </div>
         <div class="col" id ="spiel">
                 <h1>Suzanne Milligan</h1>
-                <p><em>Computing Masters Graduate</em></p>
+                <p><h5><em>Computing Masters Graduate</em><br><br> I have recently completed a Masters degree at Cardiff University. The course was BCS accredited and covered many subject areas, providing
+                    a balance of software engineering skills and technical ablities. Below is a table showing the taught modules from the course and the marks that I obtained in each module. <br></p></h5>
         </div>
    </div>
-   <p>I have recently completed a Masters degree at Cardiff University. Below is a table showing the taught modules from the course: <br>
+
    <table class="table table-striped">
          <thead>
          <tr>
@@ -69,9 +70,9 @@
          </tr>
          </tbody>
      </table>
-         <p>My dissertation topic was (60 credits) 'A Web Application for Recording a Personal OCD Diary' - currently awaiting mark.<br>
+         <p><h5>My dissertation topic was (60 credits) 'A Web Application for Recording a Personal OCD Diary' - currently awaiting mark.<br>
             The site created as part of my dissertation can be found at <a href ="https://ocddiary.herokuapp.com">here</a>
-         </p>
+     </h5></p>
 
 
    </p>
@@ -146,18 +147,44 @@
    </table>
        <div id="hr">
            <h3>Education</h3>
-           <p>I have recently completed a masters degree in computing at Cardiff University. I also hold an undergraduate batchelor of engineering
+           <p><h5>I have recently completed a masters degree in computing at Cardiff University. I also hold an undergraduate batchelor of engineering
                degree from Imperial College in Materials Science.
-               </p>
+            </h5> </p>
 
       </div>
 
 
 </div>
     <div class="tab-pane fade p-5" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-        <div class="d-grid gap-4" style=""padding-bottom: 20px;">
+<!--            <h4> Please enter your contact details</h4>-->
+
+<!--        <form action ="" method="POST">-->
+
+<!--            <p>-->
+<!--                {{ wtf.form_field(form.name) }}<br>-->
+<!--                {% for error in form.name.errors %}-->
+<!--                <span style="color:red;">[{{ error }}]</span>-->
+<!--                {% endfor %}-->
+<!--                {{ wtf.form_field(form.email) }}<br>-->
+<!--                {% for error in form.email.errors %}-->
+<!--                <span style="color:red;">[{{ error }}]</span>-->
+<!--                {% endfor %}-->
+<!--                {{ wtf.form_field(form.message) }}<br>-->
+<!--                {% for error in form.message.errors %}-->
+<!--                <span style="color:red;">[{{ error }}]</span>-->
+<!--                {% endfor %}-->
+
+
+
+<!--            </p>-->
+
+<!--            <button class ="btn btn-primary btn-lg mt-3 mb-3 me-3" type="submit" name="edit" value="edit">Send </button>-->
+
+<!--        </form>-->
+
+        <div class="d-grid gap-4" style="padding-bottom: 20px;">
             <a href = "https://www.linkedin.com/in/suzanne-milligan-48264598/" target="_blank" class="btn btn-primary btn-lg" role="button"><b>LinkedIn profile</b></a>
-            <button class="btn btn-primary btn-lg" type="button"><b>Button</b></button>
+<!--            <button class="btn btn-primary btn-lg" type="button"><b>Button</b></button>-->
         </div>
     </div>
 
