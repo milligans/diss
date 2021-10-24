@@ -8,7 +8,7 @@ from app.forms import ContactForm
 app= Flask(__name__)
 Bootstrap(app)
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 def index():
     form=ContactForm(request.form)
     return render_template("index.html")
