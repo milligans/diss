@@ -7,7 +7,7 @@
     <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true">About</button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+    <button class="nav-link" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills" type="button" role="tab" aria-controls="skills" aria-selected="false">Skill Set</button>
   </li>
   <li class="nav-item" role="presentation">
     <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
@@ -23,17 +23,128 @@
         </div>
         <div class="col" id ="spiel">
                 <h1>Suzanne Milligan</h1>
-                <p><em>Computing Masters student at Cardiff University</em></p>
+                <p><em>Computing Masters Graduate</em></p>
         </div>
    </div>
-   <p>I am currently studying a Masters degree at Cardiff University. It is a computing conversion course. It teaches
-       people with no background in computing how to become a software developer. <em>This page is currently a work in progress.
-       </em>
+   <p>I have recently completed a Masters degree at Cardiff University. Below is a table showing the taught modules from the course: <br>
+   <table class="table table-striped">
+         <thead>
+         <tr>
+             <th scope="col"><b>Module Name</b></th>
+             <th scope="col"><b>Credits</b></th>
+             <th scope="col"><b>Module Mark</b></th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr>
+             <th scope="row">Computational Thinking</th>
+             <td>10</td>
+             <td>71%</td>
+         </tr>
+         <tr>
+             <th scope="row">Fundamentals of Programming</th>
+             <td>30</td>
+             <td>88%</td>
+
+         </tr>
+         <tr>
+             <th scope="row">Alogrithms, Data Structures and Programming</th>
+             <td>20</td>
+             <td>70%</td>
+         </tr>
+         <tr>
+             <th scope="row">Databases and Modelling</th>
+             <td>20</td>
+             <td>83%</td>
+         </tr>
+         <tr>
+             <th scope="row">Topics, Research and Skills in Computing</th>
+             <td>10</td>
+             <td>81%</td>
+         </tr>
+         <tr>
+             <th scope="row">Software Engineering</th>
+             <td>30</td>
+             <td>79%</td>
+         </tr>
+         </tbody>
+     </table>
+         <p>My dissertation topic was (60 credits) 'A Web Application for Recording a Personal OCD Diary' - currently awaiting mark.<br>
+            The site created as part of my dissertation can be found at <a href ="https://ocddiary.herokuapp.com">here</a>
+         </p>
+
+
    </p>
      </div>
       </div>
-  <div class="tab-pane fade p-5" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-      <div id="hr">
+  <div class="tab-pane fade p-5" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+
+   <h3>Work Experience</h3>
+
+   <table class="table table-striped">
+       <thead>
+           <tr>
+               <th>Dates</th>
+               <th>Occupation</th>
+               <th>Company</th>
+           </tr>
+       </thead>
+
+            <td>May 2017- Mar 2020</td>
+            <td>ICT Schools Engineer</td>
+            <td>Bridgend County Borough Council</td>
+        </tr>
+       <tr>
+           <td>June 2007 - May 2017</td>
+           <td>ICT Technician</td>
+           <td>Pencoed Comprehensive School</td>
+       </tr>
+
+   </table>
+    <hr>
+
+   <h3>Skills</h3>
+   <table class="table table-striped">
+       <thead>
+           <tr>
+               <tr>
+                <th scope="col"><b>Skill</b></th>
+                <th scope="col"><b>Rating</b></th>
+                <th scope="col"><b>Comment</b></th>
+         </tr>
+           </tr>
+       </thead>
+       <tr>
+            <td>Javascript</td>
+            <td> ⭐⭐⭐⭐</td>
+           <td>See github for examples</td>
+       </tr>
+            <td>HTML</td>
+            <td>⭐⭐⭐⭐</td>
+            <td>See current project</td>
+       </tr>
+       <tr>
+            <td>Python</td>
+            <td>⭐⭐⭐⭐</td>
+            <td>This site is produced on a Flask/Python framework</td>
+       </tr>
+       <tr>
+            <td>CSS</td>
+            <td>⭐⭐⭐⭐</td>
+            <td>This site features Bootstrap 5 plus custom CSS</td>
+        </tr>
+       <tr>
+           <td>SQL</td>
+           <td>⭐⭐⭐</td>
+           <td>Moderate experience</td>
+       </tr>
+       <tr>
+           <td>Java</td>
+           <td>⭐⭐</td>
+           <td>Basic experience</td>
+       </tr>
+   </table>
+       <div id="hr">
            <h3>Education</h3>
            <p>I am a graduate of Imperial College, London. My degree is an honours degree in Engineering, and the subject was Materials Science.</p>
            <ul>
@@ -41,50 +152,6 @@
                <li><strong><a href="https://www.cardiff.ac.uk">Cardiff University</a></strong></li>
            </ul>
       </div>
-   <h3>Work Experience</h3>
-
-   <table cellspacing="10" cellpadding="10%">
-       <thead>
-           <tr>
-               <th>Dates</th>
-               <th>Occupation</th>
-           </tr>
-       </thead>
-        <tr>
-            <td>2017-2020</td>
-            <td>BCBC ICT Schools Engineer</td>
-        </tr>
-        <tr>
-            <td>2020</td>
-            <td>Masters Student</td>
-        </tr>
-
-   </table>
-    <hr>
-   <h3>Skills</h3>
-   <table cellspacing = "10" cellpadding = "10%">
-       <thead>
-           <tr>
-               <th><h3>Skills</h3></th>
-               <th><h3>Rating</h3></th>
-               <th><h3>Skills</h3></th>
-               <th><h3>Rating</h3></th>
-           </tr>
-       </thead>
-       <tr>
-         <td>Javascript</td>
-        <td> ⭐⭐⭐⭐</td>
-         <td>HTML</td>
-        <td> ⭐⭐⭐</td>
-
-       </tr>
-        <tr>
-            <td>Python</td>
-            <td>⭐⭐⭐</td>
-            <td>CSS</td>
-            <td>⭐</td>
-        </tr>
-   </table>
 
 
 </div>
