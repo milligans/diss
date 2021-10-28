@@ -22,6 +22,7 @@ h1,h2,h3{
     color: #DF7861;
 
 }
+
 .tab-content>.active {
     background: #FCF8E8;
     box-shadow: 0 10px 100px 0 rgba(0, 0, 0, 0.2), 0 60px 200px 0 rgba(0, 0, 0, 0.19);
