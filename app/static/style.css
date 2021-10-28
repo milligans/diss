@@ -1,5 +1,5 @@
 body{
-    background-image: url("img/DSC_0622_low_res.JPG");
+    background-image: url("img/background.jpg");
     /*background: linear-gradient(#D4E2D4, #ECB390 ) no-repeat center center fixed;*/
     background-color: #cccccc; /* Used if the image is unavailable */
     height: 1100px; /* You must set a specified height */
