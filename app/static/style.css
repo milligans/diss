@@ -1,3 +1,5 @@
+
+
 body{
     background-image: url("img/background.jpg");
     /*background: linear-gradient(#D4E2D4, #ECB390 ) no-repeat center center fixed;*/
@@ -6,7 +8,7 @@ body{
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
-
+    font-family: 'Space Mono', monospace;
 
 }
 /*#homebox {*/
@@ -15,7 +17,7 @@ body{
 
 img {
     height: 400px;
-    border: 0.2rem groove #DF7861;
+    /*border: 0.2rem groove #DF7861;*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 h1,h2,h3{
@@ -42,6 +44,7 @@ h1,h2,h3{
     background-color: #D4E2D4;
     color: #DF7861;
     border: 1px solid #ECB390;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn-primary:hover, .btn-primary:focus, btn-primary:active, btn-primary.active, .open>.dropdown-toggle.btn-primary {
@@ -64,3 +67,4 @@ h1,h2,h3{
 
 
 /* #FCF8E8 beige, D4E2D4 pale green #ECB390 rose # DF7861 dark rose*/
+/*6F69AC navy 95DAC1 teal FFEBA1 yellow FD6F96*/
